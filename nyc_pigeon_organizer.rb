@@ -22,7 +22,7 @@ def nyc_pigeon_organizer(data)
       name.each do |name|
         hash[name] ||= {}
         hash[name][color] ||= []
-        
+        hash[name][key] << color.to_s
       end
     end
   end
