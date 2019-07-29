@@ -14,20 +14,6 @@
 # end
 
 
-def nyc_pigeon_organizer(data)
-  hash = {}
-  
-  data.each do |key, value|
-    value.each do |color, name|
-      name.each do |name|
-        hash[name] ||= {}
-        hash[name][key] ||= []
-        hash[name][key] << color.to_s
-      end
-    end
-  end
-  hash
-end
 
 
 
