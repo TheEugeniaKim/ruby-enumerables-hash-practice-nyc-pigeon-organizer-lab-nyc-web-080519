@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
   data.each do |key, value|
     value.each do |color, name|
       name.each do |name|
-        hash[name] = [color 
+        hash[name] = [color]
       end
     end
   end
